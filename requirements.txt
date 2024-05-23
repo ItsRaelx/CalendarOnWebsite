@@ -1,0 +1,8 @@
+fastapi~=0.111.0
+uvicorn[standard]~=0.29.0
+google-auth
+google-auth-oauthlib
+google-api-python-client
+fastapi-cache2[memcache]
+pydantic~=2.7.1
+google~=3.0.0

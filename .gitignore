@@ -1,0 +1,14 @@
+# Ignore the virtual environment
+.venv/
+# Ignore Python cache files
+__pycache__/
+*.pyc
+# Ignore log files and temporary files
+*.log
+*.tmp
+# Ignore the token file containing sensitive information
+token.json
+# Ignore Docker related files
+docker-compose.yml
+*.env
+.idea/

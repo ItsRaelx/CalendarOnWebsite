@@ -171,7 +171,7 @@ function formatDate(date) {
 
 function fetchMonthEvents(year, month, monthEvents) {
   const xhr = new XMLHttpRequest();
-  const url = `http:127.0.0.1:8000/events/${year}/${month + 1}`;
+  const url = `/events/${year}/${month + 1}`;
   xhr.open('GET', url, false); // Make the request synchronous
   xhr.send();
 
