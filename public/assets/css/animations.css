@@ -1,0 +1,38 @@
+@keyframes left-in {
+    0%{
+        filter: opacity(0%);
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes right-in {
+    0%,25%{
+        filter: opacity(0%);
+        transform: translateY(-20px);
+    }
+}
+
+.box .left .day {
+    animation: left-in 2s;
+}
+
+.box .left img {
+    animation: left-in 2s;
+}
+
+.box .left .scroll {
+    animation: left-in 2s;
+}
+
+.box .left .btns {
+    animation: left-in 2s;
+}
+
+.box .right .top{
+    animation: right-in 2s;
+}
+
+.box .right .bottom{
+    animation: right-in 2s;
+
+}

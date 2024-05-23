@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0&display=swap" />
+
+
+  <link rel="shortcut icon" href="./img/logo_old.png" type="image/x-icon">
+
+  <title>Kalendarz</title>
+</head>
+<!-- Strona Wykonana przez Dawid Iwański, kopiowanie, modyfikowanie oraz rozpowszechnianie całości lub fragmentów strony zabronione -->
+<!-- Projekt strony został wykonany w oprogramowaniu Figma przez Oskar Kacała -->
+
+<body>
+
+  <div class="box">
+
+    <div class="left">
+      <a href="https://www.raidhost.pl/"><img src="/img/logo.svg" width="222" alt=""></a>
+
+      <div class="day">
+        <h2 id="dayNumber">$</h2>
+        <h3 id="dayText">$</h3>
+      </div>
+
+
+      <div class="scroll">
+
+      </div>
+
+
+    </div>
+
+
+    <div class="right">
+      <div class="top">
+        <div class="buttons-wrapper">
+            <a href="https://e.pcloud.link/publink/show?code=kZM9msZihTBoPBbboSpHpI2bSIpCJfgVGH7">
+                <button>
+                    <span class="material-symbols-outlined">folder</span>
+                    Udostępnione materiały
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </a>
+        </div>
+
+        <div class="date">
+          <span id="prev-year" class="material-symbols-outlined">arrow_back_ios</span>
+          <h2 id="year">&</h2>
+          <span id="next-year" class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+
+      </div>
+
+
+      <div class="bottom">
+        <div class="month">
+          <span id="prev-month" class="material-symbols-outlined">arrow_back_ios</span>
+          <h2 id="month">&</h2>
+          <span id="next-month" class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+
+        <div class="callendar">
+          <div class="days">
+            <h3>Po</h3>
+            <h3>Wt</h3>
+            <h3>Śr</h3>
+            <h3>Cz</h3>
+            <h3>Pt</h3>
+            <h3>So</h3>
+            <h3>Ni</h3>
+          </div>
+
+          <div class="d-boxes"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./calendar.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --left-bg: #292A2E;
+    --right-bg: #EAEBEF;
+}
+
+#c-blue{
+    color:rgb(34, 170, 255);
+    border: 1px solid rgb(34, 170, 255);
+}
+
+#bg-blue{
+    background: rgba(34, 170, 255, 0.567);
+}
+
+#c-green{
+    color: rgb(88, 255, 54);
+    border: 1px solid rgb(88, 255, 54);
+}
+
+#bg-green{
+    background: rgba(88, 255, 54, 0.557);
+}
+
+
+body{
+    margin:0;
+    font-family: poppins;
+    user-select: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(128, 128, 128);
+    border-radius: 15px;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: WHITE;
+    border-radius: 15px;
+  }
+
+.buttons-wrapper a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed for spacing between buttons */
+}
+
+/* BOX */
+
+.box{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.box .left{
+    background: var(--left-bg);
+    height: 100vh;
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.box .left img{
+    margin: 0 50px;
+    width: 100px;
+}
+
+.box .left .day{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--right-bg);
+}
+
+.box .left .day h2{
+    font-size: 100px;
+    margin:15px 0;
+}
+
+.box .left .day h3{
+    margin:0;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.box .left .scroll{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    margin: 50px;
+    height: 38%;
+}
+
+.box .left .scrollbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.box .left .scrollbox .text h2{
+    margin:0;
+    font-size: 18px;
+    color: var(--right-bg);
+    font-weight: 400;
+}
+
+.box .left .scrollbox .text h3{
+    margin:0;
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+}
+
+.box .left .icon{
+    display: flex;
+    margin: 0 10px;
+}
+
+.box .left .scrollbox .icon .ic{
+    border: 1px solid rgb(34, 170, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box .left .scrollbox .icon .ic .circle{
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.box .left .btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.box .left .btns button{
+    background: var(--right-bg);
+    padding: 20px 30PX;
+    border: 0;
+    border-radius: 20px;
+    transition: 200ms;
+
+}
+.box .left .btns button:hover{
+    transition: 200ms;
+    filter: opacity(75%);
+    cursor: pointer;
+}
+
+.box .left .btns button span{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--left-bg);
+}
+.box .left .btns button #bin{
+    color: rgb(255, 38, 38);
+}
+
+
+.box .right{
+    background: var(--right-bg);
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.box .right .top {
+    margin: 50px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box .right .top button{
+    display: flex;
+    align-items: center;
+    border:0;
+    background-color: var(--left-bg);
+    color: WHITE;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 400;
+    padding: 7.5px 5px;
+    border-radius: 20px;
+    transition: 200ms;
+
+}
+
+.box .right .top button:hover{
+    filter: opacity(75%);
+    transition: 200ms;
+    cursor: pointer;
+}
+.box .right .top button span{
+    margin: 0 8.5px;
+    font-size: 21.5px;
+}
+
+.box .right .top .date {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.box .right .top .date h2 {
+    font-size: 80px;
+    font-weight: 300;
+    margin: 0;
+}   
+
+.box .right .top .date span {
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.601);
+}
+
+.box .right .top .date span:hover {
+   transition: 200ms;
+   filter: opacity(75%);
+   cursor: pointer;
+}
+
+.box .right .bottom{
+    margin: 50px 50px;
+    height: 60%;
+}
+
+.box .right .bottom .month{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.box .right .bottom .month h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}   
+
+.box .right .bottom .month span {
+    font-weight: 600;
+    margin: 0 35px;
+    color: rgba(128, 128, 128, 0.601);
+}
+
+.box .right .bottom .month span:hover {
+   transition: 200ms;
+   filter: opacity(75%);
+   cursor: pointer;
+}
+
+.box .right .bottom .callendar .days{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box .right .bottom .callendar .days h3{
+    font-weight: 400;
+}
+
+.box .right .bottom .callendar .d-boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box .right .bottom .callendar .d-boxes .line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+.box .right .bottom .callendar .d-boxes .d-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box .right .bottom .callendar .d-boxes .d-box .bx{
+    color: var(--left-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    transition: 200ms;
+
+}
+
+.box .right .bottom .callendar .d-boxes .d-box .bx:hover{
+    background: rgba(0, 0, 0, 0.268);
+    cursor: pointer;
+    color: white;
+    transition: 200ms;
+
+}
+
+.box .right .bottom .callendar .d-boxes .d-box .active{
+    background: var(--left-bg);
+    color: var(--right-bg)
+}
+
+.box .right .bottom .callendar .d-boxes .d-box .bx h3{
+    font-size: 17.5px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+.box .right .bottom .callendar .d-boxes .d-box .dots {
+    margin-top: 2.5PX;
+    display: flex;
+    align-items: center;
+}
+.box .right .bottom .callendar .d-boxes .d-box .dot {
+    height: 5px;
+    width: 5px;
+    padding: 1PX;
+    border-radius: 100%;
+    margin: 0 2.5px;
+}
